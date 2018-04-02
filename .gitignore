@@ -87,7 +87,6 @@ Thumbs.db
 *~
 
 # IDE FILES
-*.sublime-*
 *.tmproj
 *.vscode
 .vscode
