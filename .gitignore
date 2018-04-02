@@ -90,6 +90,7 @@ Thumbs.db
 *.sublime-*
 *.tmproj
 *.vscode
+.vscode
 
 # BOWER & BUILD TOOLS
 /build/*
