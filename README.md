@@ -1,6 +1,6 @@
 # [Setting Up An Express API](https://github.com/jamesktruitt/farm-animals-api)
 
-Express is a Node.js web-framework that accelerates development of web-server applications. The primary function of a web-server is to store, process, and deliver web pages to clients. Basic middleware pattern for declarative routing!
+Express is a Node.js web-framework that accelerates development of web-server applications. The primary function of a web-server is to store, process, and deliver web pages to clients. Basic middleware pattern for declarative routing.
 
 * [ ] Create, Read, Update, Delete - CRUD
 * [ ] "Point Guards Play Defense" - Post, Get, Put, Delete \(RESTful APIs\)
