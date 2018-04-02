@@ -3,7 +3,7 @@
 Express is a Node.js web-framework that accelerates development of web-server applications. The primary function of a web-server is to store, process, and deliver web pages to clients. Basic middleware pattern for declarative routing.
 
 * [ ] Create, Read, Update, Delete - CRUD
-* [ ] "Point Guards Play Defense" - Post, Get, Put, Delete (RESTful APIs)
+* [ ] "Point Guards Play Defense" - Post, Get, Put, Delete \(RESTful APIs\)
 * [ ] Create a new directory for your Express server and run
 * [ ] Initialize a new repo with `git init`
 * [ ] `npm init -Y` to start a new project and create your `package.json`
@@ -14,10 +14,10 @@ Express is a Node.js web-framework that accelerates development of web-server ap
 * [ ] Add `.env` and `node_modules` to your `.gitignore`
 * [ ] Write an `app.js` file that initializes Express and uses the `cors`, `body-parser`, and `morgan` middleware, and exports app as a module, see farm-animals-api for reference
 * [ ] Write an `index.js` file that requires the `app.js` module and listens for requests on a configured port or port 3000 `app.listen(process.env.PORT || 3000)`
-* [ ] Write basic data model and routes for testing (launch Postman) to be sure that your app.js logic is "wired up"
-* [ ] Write 404 (Page Not Found) and 500 (Internal Server Error) error handlers
-* [ ] Make a directory called `models` and a `models/name_of_model.js` file and extract your basic data model from `app.js` (Kyle's working backwards method)
-* [ ] Remember to Promisify your returned data functions w/ Promise.resolve()
+* [ ] Write basic data model and routes for testing \(launch Postman\) to be sure that your app.js logic is "wired up"
+* [ ] Write 404 \(Page Not Found\) and 500 \(Internal Server Error\) error handlers
+* [ ] Make a directory called `models` and a `models/name_of_model.js` file and extract your basic data model from `app.js` \(Kyle's working backwards method\)
+* [ ] Remember to Promisify your returned data functions w/ Promise.resolve\(\)
 * [ ] Use `npm run dev` to run your server and continue to re-configure app.js as you write and test methodically. Remember thin vertical cake slices.
 
 ## Setting Up Postgres
@@ -45,7 +45,7 @@ Express is a Node.js web-framework that accelerates development of web-server ap
 * [ ] Add a test spec to your `tests` folder
 * [ ] Write a test specifying what your route should return
 * [ ] Add a route handler to your `app.js` or route file
-* [ ] Hard-code the response to make the test pass (make it asynchronous)
+* [ ] Hard-code the response to make the test pass \(make it asynchronous\)
 * [ ] Add a model file for the data
 * [ ] Add and export a method on the model that returns the hard-coded data
 * [ ] Import the model into the route and use the model's method to access and return the data
@@ -59,3 +59,6 @@ Express is a Node.js web-framework that accelerates development of web-server ap
 * [ ] Run your seeds in production with `knex seed:run --env production`
 * [ ] Update your model's method to use the database connection to return the data instead of the hardcoded data
 * [ ] Deploy your changes to production
+
+
+
