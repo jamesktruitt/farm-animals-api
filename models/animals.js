@@ -1,40 +1,43 @@
-const animals = [{
-    id: 1,
-    name: "Wilbur",
-    breed: "Pig"
-},{
-    id: 2,
-    name: "Glooey",
-    breed: "Horse"
-}];
+const database = require("../database_connection");
 
 function list() {
-    return Promise.resolve(animals);
-};
+	return database("animal").select();
+}
 
 function read(id) {
-    return Promise.resolve(animals[id - 1]);
-};
+	return database("animal")
+		.select()
+		.where("id", id)
+		.first();
+}
 
 function create(animal) {
-    animals.push(animal);
-    return Promise.resolve(animal);
-};
+	return database("animal")
+		.insert(animal)
+		.returning("*")
+		.then(animals => animals[0]);
+}
 
 function update(id, animal) {
-    animals[id - 1] = animal;
-    return Promise.resolve(animals);
-};
+	return database("animal")
+		.update(animal)
+		.where("id", id)
+		.returning("*")
+		.then(animals => animals[0]);
+}
 
 function remove(id) {
-    animals[id - 1] = null;
-    return Promise.resolve(); // You return nothing from a delete request
-};
+	return database("animal")
+		.delete()
+		.where("id", id)
+		.returning("*")
+		.then(animals => animals[0]);
+}
 
 module.exports = {
-    list,
-    read,
-    create,
-    update,
-    remove // Can not use "delete" as it is a keyword
+	list,
+	read,
+	create,
+	update,
+	remove, // Can not use "delete" as it is a keyword
 };
